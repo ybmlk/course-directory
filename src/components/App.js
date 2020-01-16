@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter,
   Route,
-  Switch
+  Switch,
+  HashRouter
 } from 'react-router-dom';
 
 
@@ -17,7 +18,8 @@ import Featured from './Featured';
 
 
 const App = () => (
-  <BrowserRouter>
+  // using 'HashRouter' insted of 'BrowserRouter' keeps the link in sync when refreshed
+  <HashRouter>
     <div className="container">
       <Header />
 
@@ -35,7 +37,7 @@ const App = () => (
       </Switch>
 
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
