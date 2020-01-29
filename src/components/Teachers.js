@@ -9,14 +9,14 @@ const Teachers = () => {
         <a href={`/teachers/html/${teacher.name}/${index}`}>
           <h3>{teacher.name}</h3>
         </a>
-        <p>{teacher.bio}</p>
+        <p className='text-justify'>{teacher.bio}</p>
       </li>
     );
   });
 
   return (
     <div className='main-content' id='teachers'>
-      <h2>Teachers</h2>
+      <h2 className='text-center'>Teachers</h2>
       <ul className='group'>{teachers}</ul>
     </div>
   );

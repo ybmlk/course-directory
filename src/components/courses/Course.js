@@ -5,7 +5,7 @@ const Course = props => (
     <img className='course-img' src={props.img} alt='course' />
     <div>
       <h3>{props.title}</h3>
-      <p>{props.desc}</p>
+      <p className='text-justify'>{props.desc}</p>
     </div>
   </li>
 );

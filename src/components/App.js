@@ -13,11 +13,13 @@ import Featured from './Featured';
 const App = () => (
   <div className='container'>
     <Header />
-    <Home />
-    <About title='About' />
-    <Teachers />
-    {/* <Route path='/:topic/:name' component={Featured} /> */}
-    <Courses />
+    <div className='inner-container'>
+      <Home />
+      <About title='About' />
+      <Teachers />
+      {/* <Route path='/:topic/:name' component={Featured} /> */}
+      <Courses />
+    </div>
   </div>
 );
 

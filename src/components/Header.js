@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <header>
+  <header className='header'>
     <span className='icn-logo'>
       <i className='material-icons'>code</i>
     </span>

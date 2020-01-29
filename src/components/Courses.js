@@ -28,9 +28,8 @@ class Courses extends Component {
   render() {
     return (
       <div className='main-content courses' id='courses'>
+        <h2 className='text-center'>Courses</h2>
         <div className='course-header group'>
-          <h2>Courses</h2>
-
           <ul className='course-nav'>
             <li>
               <button className='btn btn-primary' onClick={this.displayCourse}>
